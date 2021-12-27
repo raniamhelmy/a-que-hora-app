@@ -1,0 +1,67 @@
+.loading-container{
+    margin:8rem auto 0 auto;
+    background:url("https://images.unsplash.com/photo-1577132161035-1a187871ec13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width:400px;
+    font-family: 'Readex Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: grayscale(55%);
+    -webkit-filter: grayscale(55%);
+    -moz-filter: grayscale(55%);
+}
+.loading-container-wrap{
+    width: 85%; 
+    margin: 0 auto;
+}
+
+.loading-title{
+    font-size: clamp(1.5rem, 2.4vw, 2.5rem);
+    font-weight:700 ;
+}
+
+.c1{
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+  stroke-width:7px;
+  transform-origin:150px 150px;
+  animation-name: turnone;
+}
+
+@keyframes turnone{
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(4320deg);}
+}
+
+.c2{
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+  stroke-width:8px;
+  transform-origin:150px 150px;
+  animation-name: turntwo;
+}
+
+@keyframes turntwo{
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+  @media screen and (min-width: 1100px) {
+    .loading-container{
+        height: 400px;
+    }
+}
+  @media screen and (max-width: 450px) {
+    .loading-container{
+        margin:6rem auto 0 auto;
+        max-width:318px;
+        height: 380px;
+       
+    }
+}

@@ -1,0 +1,411 @@
+.sun-container{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    padding:0.8rem .5rem;
+
+}
+.sun-rise-container,.sun-set-container{
+    font-size: 30px;
+    padding:0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p.time-text{
+  margin: 0 auto;
+}
+
+svg{
+    shape-rendering: geometricPrecision;
+    
+}
+g, path, circle, rect{
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-direction: normal;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 12s;
+    -moz-animation-direction: normal;
+    -o-transform-origin: 50% 50%;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 12s;
+    -o-animation-direction: normal;
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-direction: normal;
+}
+
+
+/*********************SunRise Animation********************************/
+
+.climacon_componentWrap-sunriseAlt {
+    -webkit-animation-name: translateSunrise, fillOpacity;
+    -moz-animation-name: translateSunrise, fillOpacity;
+    -o-animation-name: translateSunrise, fillOpacity;
+    animation-name: translateSunrise, fillOpacity;
+    -webkit-animation-duration: 12s, 6s;
+    -moz-animation-duration: 12s, 6s;
+    -o-animation-duration: 12s, 6s;
+    animation-duration: 12s, 6s;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.climacon_component-stroke_sunSpoke {
+    -webkit-animation-name: scale;
+    -moz-animation-name: scale;
+    -o-animation-name: scale;
+    animation-name: scale;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.climacon_component-stroke_sunSpoke:nth-child(even) {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+@-webkit-keyframes scale{
+    0%{
+        -webkit-transform: scale(1,1)
+    }
+    100%{
+        -webkit-transform: scale(.5,.5)
+    }   
+}
+@-moz-keyframes scale{
+    0%{
+        -moz-transform: scale(1,1)
+    }
+    100%{
+        -moz-transform: scale(.5,.5)
+    }   
+}
+@-o-keyframes scale{
+    0%{
+        -o-transform: scale(1,1)
+    }
+    100%{
+        -o-transform: scale(.5,.5)
+    }   
+}
+@keyframes scale{
+    0%{
+        transform: scale(1,1)
+    }
+    100%{
+        transform: scale(.5,.5)
+    }   
+}
+@-webkit-keyframes fillOpacity {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+}
+@-moz-keyframes fillOpacity {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+}
+@-o-keyframes fillOpacity {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+}
+@keyframes fillOpacity {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+}
+@-webkit-keyframes translateSunrise {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-16.002px);
+  }
+  100% {
+    -webkit-transform: translateY(-16.002px);
+  }
+}
+@-moz-keyframes translateSunrise {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-16.002px);
+  }
+  100% {
+    -moz-transform: translateY(-16.002px);
+  }
+}
+@-o-keyframes translateSunrise {
+  0% {
+    -o-transform: translateY(0);
+  }
+  25% {
+    -o-transform: translateY(-16.002px);
+  }
+  100% {
+    -o-transform: translateY(-16.002px);
+  }
+}
+@keyframes translateSunrise {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-16.002px);
+  }
+  100% {
+    transform: translateY(-16.002px);
+  }
+}
+    
+/************************************************************************/
+
+
+/***********************SunSet Animation***************************/
+
+
+
+.climacon_componentWrap-sunsetAlt {
+    -webkit-animation-name: translateSunset;
+    -moz-animation-name: translateSunset;
+    -o-animation-name: translateSunset;
+    animation-name: translateSunset;
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+    -webkit-animation-duration: 12s;
+    -moz-animation-duration: 12s;
+    -o-animation-duration: 12s;
+    animation-duration: 12s;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.climacon_component-stroke_sunSpoke {
+    -webkit-animation-name: scale;
+    -moz-animation-name: scale;
+    -o-animation-name: scale;
+    animation-name: scale;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.climacon_component-stroke_sunSpoke:nth-child(even) {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+@-webkit-keyframes scale{
+    0%{
+        -webkit-transform: scale(1,1)
+    }
+    100%{
+        -webkit-transform: scale(.5,.5)
+    }   
+}
+@-moz-keyframes scale{
+    0%{
+        -moz-transform: scale(1,1)
+    }
+    100%{
+        -moz-transform: scale(.5,.5)
+    }   
+}
+@-o-keyframes scale{
+    0%{
+        -o-transform: scale(1,1)
+    }
+    100%{
+        -o-transform: scale(.5,.5)
+    }   
+}
+@keyframes scale{
+    0%{
+        transform: scale(1,1)
+    }
+    100%{
+        transform: scale(.5,.5)
+    }   
+}
+@-webkit-keyframes fillOpacity {
+    0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    }
+    100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+    }
+}
+@-moz-keyframes fillOpacity {
+    0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    }
+    100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+    }
+}
+@-o-keyframes fillOpacity {
+    0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    }
+    100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+    }
+}
+@keyframes fillOpacity {
+    0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    }
+    100% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+    }
+}
+@-webkit-keyframes translateSunset {
+    0% {
+    -webkit-transform: translateY(-16px);
+    }
+    25% {
+    -webkit-transform: translateY(-4px);
+    }
+    100% {
+    -webkit-transform: translateY(-4px);
+    }
+}
+@-moz-keyframes translateSunset {
+    0% {
+    -moz-transform: translateY(-16px);
+    }
+    25% {
+    -moz-transform: translateY(-4px);
+    }
+    100% {
+    -moz-transform: translateY(-4px);
+    }
+}
+@-o-keyframes translateSunset {
+    0% {
+    -o-transform: translateY(-16px);
+    }
+    25% {
+    -o-transform: translateY(-4px);
+    }
+    100% {
+    -o-transform: translateY(-4px);
+    }
+}
+@keyframes translateSunset {
+    0% {
+    transform: translateY(-16px);
+    }
+    25% {
+    transform: translateY(-4px);
+    }
+    100% {
+    transform: translateY(-4px);
+    }
+}
+
+/**************************************************************************************/
+@media screen and (max-width: 800px) {
+  .sun-container{
+      margin:1.4rem 0 ;
+      
+      
+  }
+}
