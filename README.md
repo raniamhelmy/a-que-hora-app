@@ -1,6 +1,6 @@
 # React A Qué Hora App
 
-This is a simple website to Get Current Time in Different Locations; including Current Temperature Sunrise, and Sunset. Current Time can be displayed with Analogue/Digital Clock and also the difference between your local time and the city you are searching for.
+This is a simple website to Get Current Time in Different Locations; including Current Temperature,  Sunrise, and Sunset. Current Time can be displayed with Analogue/Digital Clock and also the difference between your local time and the city you are searching for.
 
 Also, a search bar was added in order to allow the user to search for specific city on Openweathermap DB. This project was created with React hooks, and using [Weather API - OpenWeatherMap](https://openweathermap.org/api) for fetching user's requirment and get it's corresponding data.
 
