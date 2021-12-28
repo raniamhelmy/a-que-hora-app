@@ -1,5 +1,5 @@
 .home-container-clear-day,.home-container-clear-night,.home-container-clouds-day,.home-container-clouds-night
-,.home-container-clouds,.home-container-broken-clouds,.home-container-shower-rain,.home-container-rain-day,
+,.home-container-Sclouds-day,.home-container-Sclouds-night,.home-container-broken-clouds-day,.home-container-broken-clouds-night,.home-container-shower-rain-day,.home-container-shower-rain-night,.home-container-rain-day,
 .home-container-rain-night,.home-container-thunderstorm,.home-container-snow,.home-container-mist,.home-container-blank{
     margin:8rem auto 0 auto;
     height: 550px;
@@ -23,7 +23,7 @@
     background-size: cover;
 }
 .home-container-clouds-day{
-    background:url("https://images.unsplash.com/photo-1509803874385-db7c23652552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background:url("https://s7d2.scene7.com/is/image/TWCNews/1031_nc_partly_cloudy_3");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,22 +34,40 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home-container-clouds{
-    background:url("https://images.unsplash.com/photo-1529671496439-beb8ded2125e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
+.home-container-Sclouds-day{
+    background:url("https://images.unsplash.com/photo-1509803874385-db7c23652552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-container-Sclouds-night{
+    background:url("https://i.pinimg.com/originals/d6/81/1c/d6811ccdf1423b5797d8e598ff56056d.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-.home-container-broken-clouds{
+.home-container-broken-clouds-day{
+    background:url("https://images.unsplash.com/photo-1529671496439-beb8ded2125e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-container-broken-clouds-night{
     background:url("https://images.unsplash.com/photo-1500740516770-92bd004b996e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.home-container-shower-rain{
+.home-container-shower-rain-day{
+    background:url("https://images.unsplash.com/photo-1433863448220-78aaa064ff47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container-shower-rain-night{
     background:url("https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
     background-position: center;
     background-repeat: no-repeat;
@@ -203,7 +221,7 @@ margin:0;
 
   @media screen and (max-width: 800px) {
     .home-container-clear-day,.home-container-clear-night,.home-container-clouds-day,.home-container-clouds-night
-    ,.home-container-clouds,.home-container-broken-clouds,.home-container-shower-rain,.home-container-rain-day,
+    ,.home-container-Sclouds-day,.home-container-Sclouds-night,.home-container-broken-clouds-day,.home-container-broken-clouds-night,.home-container-shower-rain-day,.home-container-shower-rain-night,.home-container-rain-day,
      .home-container-rain-night,.home-container-thunderstorm,.home-container-snow,.home-container-mist,.home-container-blank{
         margin:2rem auto ;
         height: auto;
@@ -225,7 +243,7 @@ margin:0;
 }
   @media screen and (max-width: 500px) {
     .home-container-clear-day,.home-container-clear-night,.home-container-clouds-day,.home-container-clouds-night
-   ,.home-container-clouds,.home-container-broken-clouds,.home-container-shower-rain,.home-container-rain-day,
+   ,.home-container-Sclouds-day,.home-container-Sclouds-night,.home-container-broken-clouds-day,.home-container-broken-clouds-night,.home-container-shower-rain-day,.home-container-shower-rain-night,.home-container-rain-day,
     .home-container-rain-night,.home-container-thunderstorm,.home-container-snow,.home-container-mist,.home-container-blank{
         max-width:320px;
     }
