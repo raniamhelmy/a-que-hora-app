@@ -1,12 +1,13 @@
 .date-time-wrap{
     margin: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .time{
     font-weight:300 ;
     font-size: clamp(1.2rem, 2.4vw, 2rem);
     margin:2rem auto;
-    color:gold;
+    color:gold;   
 }
 
 .date{

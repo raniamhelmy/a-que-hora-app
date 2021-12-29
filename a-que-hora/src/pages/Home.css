@@ -6,6 +6,7 @@
     width:800px;
     font-family: 'Readex Pro', sans-serif;
     display: flex;
+    transition: 0.5s ease-in-out;
     filter: grayscale(55%);
     -webkit-filter: grayscale(55%);
     -moz-filter: grayscale(55%);
@@ -128,6 +129,7 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .city{
     margin: auto;
     text-align: center;
@@ -137,23 +139,23 @@
     justify-content:space-evenly;
     flex: 2 1 auto;
 }
+
 .city-info > h2{
  font-size: clamp(1.94rem, 3vw, 3.5rem);
  font-weight:700 ;
 }
+
 .home-date-time{
     margin:5px auto;
     display: flex;
     justify-content: space-between;
     width: 100%;
 } 
-.temperature{
 
+.temperature{
     font-weight:400 ;
     font-size: clamp(3rem, 4.5vw, 5rem);
-    margin:0;
-
-    
+    margin:0;   
 }
 
 .current-weather-state{
@@ -193,14 +195,14 @@
     color:#fff;
     font-size: clamp(1.3rem, 2.3vw, 2.4rem);
 }
+
 p.location{
     font-size: clamp(1.2rem, 2vw, 2.4rem);
     margin:0px auto;
 }
 
-
 .temp-wrap{
-margin:0;
+    margin:0;
 }
 
 .weather-details{
@@ -209,9 +211,9 @@ margin:0;
     justify-content: center;
     flex: 1 1 auto;
     text-align: center;
-    
    }
-   .weather-details-wrap{
+
+.weather-details-wrap{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;    
@@ -239,6 +241,8 @@ margin:0;
     }
     .weather-details-wrap{
         width: 80%;
+        margin:2rem auto;
+        
     }
 }
   @media screen and (max-width: 500px) {
