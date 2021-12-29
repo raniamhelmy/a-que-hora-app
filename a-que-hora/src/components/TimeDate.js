@@ -34,8 +34,7 @@ function TimeDate({timeZone}) {
             setMinute(nd.getMinutes());
             setHours(nd.getHours());
 
-             setDiff((now-nd)/(60*60*1000));
-            //console.log((now-nd)/(60*60*1000))
+            setDiff((now-nd)/(60*60*1000));
             setTime(nd.toLocaleTimeString('en-IT'));
         }
 

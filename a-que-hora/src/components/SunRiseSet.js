@@ -18,7 +18,6 @@ function SunRiseSet({data,timeZone}) {
         let utc = localTime + localOffset;
         var found_city = utc + (1000 * timeZon);
         let nd = new Date(found_city);
-
         return (nd.toLocaleTimeString('en-IT'));
     
 
