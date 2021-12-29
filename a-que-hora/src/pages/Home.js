@@ -116,6 +116,7 @@ function Home() {
           setCountry(strs[1]);
           setQuery('');
           
+          
         }
         else{
           setCity(query);
@@ -134,10 +135,12 @@ function Home() {
         ClearSkyNight: "home-container-clear-night",
         FewCloudsDay: "home-container-clouds-day",
         FewCloudsNight: "home-container-clouds-night",
-        ScatteredClouds: "home-container-clouds",
-        ScatteredCloudsNight: "home-container-clouds-night",
-        BrokenClouds: "home-container-broken-clouds",
-        ShowerRain: "home-container-shower-rain",
+        ScatteredCloudsDay: "home-container-Sclouds-day",
+        ScatteredCloudsNight: "home-container-Sclouds-night",
+        BrokenCloudsDay: "home-container-broken-clouds-day",
+        BrokenCloudsNight: "home-container-broken-clouds-night",
+        ShowerRainDay: "home-container-shower-rain-day",
+        ShowerRainNight: "home-container-shower-rain-night",
         RainDay: "home-container-rain-day",
         RainNight:"home-container-rain-night",
         Thunderstorm:"home-container-thunderstorm",
@@ -166,17 +169,30 @@ function Home() {
             setBackGround(getBackGround.FewCloudsNight);
             
             break;
-            case (icon === "03n" || icon === "03d"):
-            setBackGround(getBackGround.ScatteredClouds);
+            case (icon === "03d" ):
+            setBackGround(getBackGround.ScatteredCloudsDay);
+            
+            break;
+            case (icon === "03n"):
+            setBackGround(getBackGround.ScatteredCloudsNight);
             
             break;
             
-            case (icon === "04d" || icon === "04n"):
-            setBackGround(getBackGround.BrokenClouds);
+            case (icon === "04d"):
+            setBackGround(getBackGround.BrokenCloudsDay);
             
             break;
-            case (icon === "09d" || icon === "09n"):
-            setBackGround(getBackGround.ShowerRain);
+            case (icon === "04n"):
+            setBackGround(getBackGround.BrokenCloudsNight);
+            
+            break;
+            case (icon === "09d"):
+            setBackGround(getBackGround.ShowerRainDay);
+            
+            
+            break;
+            case (icon === "09n"):
+            setBackGround(getBackGround.ShowerRainNight);
             
             
             break;
@@ -214,10 +230,10 @@ function Home() {
           if (event.code === "Enter" || event.code === "NumpadEnter") {
             handleSubmit();
             setQuery('');
-            setCity('');
-            setCountry('');
             
           }
+          
+          
         };
         document.addEventListener("keydown", listener);
         return () => {
@@ -225,7 +241,7 @@ function Home() {
        
         };
          
-      }, [query]);
+      }, [query,city,country]);
       
     /*********************************************** */
 
@@ -235,7 +251,7 @@ function Home() {
 
       useEffect(()=>{
        getWeather();
-      },[city,country])
+      },[query])
 
       useEffect(()=>{
         get_BackGround(weather.icon);
