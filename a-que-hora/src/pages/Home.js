@@ -270,7 +270,7 @@ function Home() {
 
             <div className={backGround} >
                 
-              <div className='home-wrap'>
+              <div className='home-wrap' id='a'>
                   
                     <div className='city'>
                       <div className='city-info'>
@@ -289,7 +289,7 @@ function Home() {
                     </div>
                         
               </div>
-              <div className='weather-details'> 
+              <div className='weather-details' id='b'> 
                     <div className='weather-details-wrap'>
                      <div className='search-bar-container'>
                           <div className='search-bar'>

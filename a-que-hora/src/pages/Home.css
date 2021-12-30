@@ -138,6 +138,7 @@
     width:100%;
     justify-content:space-evenly;
     flex: 2 1 auto;
+    
 }
 
 .city-info > h2{
@@ -243,6 +244,12 @@ p.location{
         width: 80%;
         margin:2rem auto;
         
+    }
+    #a{
+        order:2;
+    }
+    #b{
+        order:1;
     }
 }
   @media screen and (max-width: 500px) {
