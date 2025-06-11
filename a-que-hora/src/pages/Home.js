@@ -49,7 +49,7 @@ function Home() {
       const getWeather= async()=>{
         try{
           if(city){
-          let response= await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${accessKey}`);
+          let response= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${accessKey}`);
            const {main,sys}=response.data;
            const weather=response.data.weather[0];
            setMain(main);
